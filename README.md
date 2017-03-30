@@ -235,7 +235,14 @@ The first image might be difficult to classify because ...
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the Step 3 on the notebook
+The code for making predictions on these new images is located in the Step 3 on the notebook. I chose these images to test the response of the net on some cases:
+
+* Image 1 is pretty good, without noise, but the image was cropped to the limits of the enclosing triangle, and the sign itself is rotated counterclockwise. This can cause problems recognizing the sign.
+* Image 2 is clear and should pose no problem for recognition.
+* Image 3 is one of the simplest signs, the net should have no problem with it.
+* Image 4 is easy to confound with 'No passing', it is good to see if the net can discriminate enough to recognize it.
+* Image 5 is a variation of 'Pedestrians' which includes the pedestrian crossing marks in the street ('zebra strips'). I think it will be challenging for the net to recognize it.
+
 
 Here are the results of the prediction:
 
